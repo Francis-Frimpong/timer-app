@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(unsplash1.jpg);
+  background-repeat: repeat-y;
+  margin: 3em;
+}
+
+h2 {
+  color: wheat;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10em;
+}
+
+.container > div {
+  margin-right: 1em;
+  margin-left: 1em;
+  text-align: center;
+  width: 60%;
+  height: 50%;
+  padding: 1em;
+  color: wheat;
+  font-size: 1.3rem;
+  border-radius: 0.5em;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.control-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-btn > button {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 0.5em;
+  width: 50%;
+  margin: 0.5em;
+  margin-top: 3em;
+  border: none;
+  outline: none;
+  color: wheat;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+}
+
+@media only screen and (min-width: 481px) {
+  body {
+    background-image: url(unsplash.jpg);
+  }
+
+  .container > div {
+    font-size: 1.5rem;
+  }
+
+  .control-btn > button {
+    width: 23%;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url(unsplash.jpg);
+  }
+
+  .container > div {
+    font-size: 1.7rem;
+  }
+
+  .control-btn > button {
+    width: 25%;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .control-btn > button {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .container > div {
+    width: 20%;
+  }
+
+  .control-btn > button {
+    width: 17%;
+  }
+}
