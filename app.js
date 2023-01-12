@@ -41,6 +41,9 @@ function start() {
       minutes.textContent = min = 0;
       seconds.textContent = sec = 0;
     }
+    hrs < 10 ? (hours.textContent = "0" + hrs) : hrs;
+    min < 10 ? (minutes.textContent = "0" + min) : min;
+    sec < 10 ? (seconds.textContent = "0" + sec) : sec;
   }, 1000);
 }
 
